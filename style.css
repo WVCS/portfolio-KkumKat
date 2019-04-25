@@ -1,5 +1,5 @@
 body {
-    background-color: #d6d0d0;
+    background-color: #fefcf9;
     font-family: Georgia;
 }
 
@@ -8,8 +8,8 @@ ul {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #c5ae4f;
-    border-bottom: 4px solid #b19c47;
+    background-color: #ebdada;
+    border-bottom: 4px solid #a2798f;
 }
 
 li {
@@ -19,7 +19,7 @@ li {
 
 li a {
     display: block;
-    color: 	#a70000;
+    color: 	#464545;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
@@ -31,17 +31,19 @@ li a {
 }
 
 li a:hover {
-    background-color: #a70000;
-    color: #c5ae4f;
+    background-color: #a2798f;
+    color: #ebdada;
     padding: 14px 19px;
-    font-size: 17px
+    font-size: 16px
 }
 
 .active {
-    background-color: #6f5d5d;
-    color: #c5ae4f
+    background-color: #a2798f;
+    color: #ebdada;
+    padding: 14px 19px;
+    font-size: 16px;
 }
 
 li:last-child {
-    border-left: 1px solid #cab660;
+    border-left: 1px solid #D3C4C4;
 }
