@@ -1,43 +1,60 @@
-<DOCTYPE html>
+<!DOCTYPE html>
+  <!---Portfolio #1827 Color Palette--->
   <link rel="stylesheet" type="text/css" href="style.css">
   <html>
     <head>
   <title>Kassidy Baier - Contact Me</title>
 </head>
+    <!---Header Picture--->
   <header id="header-background">
   <div class="logo"></div>
   </header>
     <body>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <ul>
-      <li style="font-family: Arial Black; color: #464545; padding: 0px 7px;"><h3>KASSIDY BAIER</h3></li>
-      <li style="border-right: 1px solid #D3C4C4; border-left: 1px solid #D3C4C4; font-family: Impact;"><a href="index.html">Home</a></li>
-      <li style="border-right: 1px solid #D3C4C4; font-family: Impact;"><a href="About.html">About</a></li>
-      <li style="border-right: 1px solid #D3C4C4; font-family: Impact;"><a href="Projects.html">Projects/Examples</a></li>
-      <li style="float:right; font-family: Impact;"><a class="active" href="Contact Me.html">Contact Me</a></li>
+      <!--- Nav Bar Begin--->
+    <ul class="nav">
+      <li class="nav" style="font-family: Arial Black; color: #464545; padding: 0px 7px;"><h3>KASSIDY BAIER</h3></li>
+      <li class="nav" style="border-right: 1px solid #D3C4C4; border-left: 1px solid #D3C4C4; font-family: Impact;"><a href="index.html">Home</a></li>
+      <li class="nav" style="border-right: 1px solid #D3C4C4; font-family: Impact;"><a href="About.html">About</a></li>
+      <li class="nav" style="border-right: 1px solid #D3C4C4; font-family: Impact;"><a href="Projects.html">Projects/Examples</a></li>
+      <li class="nav" style="float:right; font-family: Impact;"><a class="active" href="Contact Me.html">Contact Me</a></li>
     </ul>
-      <div class="container">
-  <form action="action_page.php">
-
-    <label for="fname">First Name</label>
-    <input type="text" id="fname" name="firstname" placeholder="Your name..">
-
-    <label for="lname">Last Name</label>
-    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
-
-    <label for="country">Country</label>
-    <select id="country" name="country">
-      <option value="australia">Australia</option>
-      <option value="canada">Canada</option>
-      <option value="usa">USA</option>
-    </select>
-
-    <label for="subject">Subject</label>
-    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
-
-    <input type="submit" value="Submit">
-
-  </form>
-</div>
+      <!---Nav Bar End--->
+      <!---Contact Form--->
+<!---Form Beginning--->
+<div class="container" id="container">
+  <h1>&bull; Contact Me &bull;</h1>
+  <div class="underline">
+  </div>
+  <form action="#" method="post" id="contact_form">
+    <div class="name">
+      <label for="name"></label>
+      <input type="text" placeholder="Your name*" name="name" id="name_input" required>
+    </div>
+    <div class="email">
+      <label for="email"></label>
+      <input type="email" placeholder="Your email*" name="email" id="email_input" required>
+    </div>
+    <div class="telephone">
+      <label for="name"></label>
+      <input type="text" placeholder="Your phone number" name="telephone" id="telephone_input">
+    </div>
+    <div class="subject">
+      <label for="subject"></label>
+      <select placeholder="Subject line*" name="subject" id="subject_input" required>
+        <option disabled hidden selected>Subject line*</option>
+        <option>I'd like to ask a request</option>
+        <option>I'd like to ask a question</option>
+        <option>Other (Please state in message)</option>
+      </select>
+    </div>
+    <div class="message">
+      <label for="message"></label>
+      <textarea name="message" placeholder="I'd like to chat about*" id="message_input" cols="30" rows="5" required></textarea>
+    </div>
+    <div class="submit">
+      <input type="submit" value="Send Message" id="form_button" />
+    </div>
+  </form><!-- // End form -->
+</div><!-- // End #container -->
   </body></html>
-  /*Portfolio #1827 Color Palette*/
