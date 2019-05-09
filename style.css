@@ -1,8 +1,13 @@
+/*Imporant CSS*/
 body {
     background-color: #fefcf9;
     font-family: Georgia;
 }
 
+body, a:hover {cursor: url(http://cur.cursors-4u.net/nature/nat-10/nat996.cur), auto !important;}
+/*End important CSS*/
+
+/*Nav Bar CSS*/
 ul.nav {
     list-style-type: none;
     margin: 0;
@@ -48,7 +53,9 @@ li.nav .active {
 li.nav:last-child {
     border-left: 1px solid #D3C4C4;
 }
+/*End nav bar CSS*/
 
+/*Header/Banner CSS*/
 #header-background{
   width: 100%; 
   height: 200px;
@@ -58,11 +65,9 @@ li.nav:last-child {
   -o-background-size: cover; 
   background-size: cover; 
 }
-
-body, a:hover {cursor: url(http://cur.cursors-4u.net/nature/nat-10/nat996.cur), auto !important;}
+/*End header/banner CSS*/
 
 /*Form CSS*/
-
 @import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
 
 div.container {
@@ -80,7 +85,7 @@ button, select {
 }
 
 button, input, select, textarea {
-  color: #5A5A5A;
+  color: #464545;
   font: inherit;
   margin: 0;
 }
@@ -94,7 +99,7 @@ textarea {
 }
 
 #container {
-  border: solid 3px #474544;
+  border: solid 3px #a2798f;
   max-width: 768px;
   margin: 60px auto;
   position: relative;
@@ -105,8 +110,8 @@ form {
   margin: 50px 0;
 }
 
-h1 {
-  color: #474544;
+h1.Contact {
+  color: #464545;
   font-size: 32px;
   font-weight: 700;
   letter-spacing: 7px;
@@ -115,7 +120,7 @@ h1 {
 }
 
 .underline {
-  border-bottom: solid 2px #474544;
+  border-bottom: solid 2px #464545;
   margin: -0.512em auto;
   width: 80px;
 }
@@ -128,8 +133,8 @@ h1 {
 input[type='text'], [type='email'], select, textarea {
 	background: none;
   border: none;
-	border-bottom: solid 2px #474544;
-	color: #474544;
+	border-bottom: solid 2px #a2798f;
+	color: #464545;
 	font-size: 1.000em;
   font-weight: 400;
   letter-spacing: 1px;
@@ -190,28 +195,28 @@ textarea {
 }
 
 ::-webkit-input-placeholder {
-	color: #474544;
+	color: #464545;
 }
 
 :-moz-placeholder { 
-	color: #474544;
+	color: #464545;
 	opacity: 1;
 }
 
 ::-moz-placeholder {
-	color: #474544;
+	color: #464545;
 	opacity: 1;
 }
 
 :-ms-input-placeholder {
-	color: #474544;
+	color: #464545;
 }
 
 #form_button {
   background: none;
-  border: solid 2px #474544;
-  color: #474544;
-  cursor: pointer;
+  border: solid 2px #a2798f;
+  color: #464545;
+  cursor: url(http://cur.cursors-4u.net/nature/nat-10/nat996.cur), auto !important;
   display: inline-block;
   font-family: 'Helvetica', Arial, sans-serif;
   font-size: 0.875em;
@@ -227,8 +232,8 @@ textarea {
 }
 
 #form_button:hover {
-  background: #474544;
-  color: #F2F3EB;
+  background: #ebdada;
+  color: #464545;
 }
 
 @media screen and (max-width: 768px) {
@@ -270,3 +275,5 @@ textarea {
     font-size: 0.875em;
   }
 }
+/*End form CSS*/
+
