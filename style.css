@@ -152,6 +152,7 @@ input[type='text'], [type='email'], select, textarea {
 	-ms-transition: all 0.3s;
 	-o-transition: all 0.3s;
 	transition: all 0.3s;
+  cursor: url(http://cur.cursors-4u.net/nature/nat-10/nat996.cur), auto !important;
 }
 
 input[type='text']:focus, [type='email']:focus, textarea:focus {
@@ -173,6 +174,7 @@ select {
   outline: none;
   -moz-appearance: none;
   -webkit-appearance: none;
+  cursor: url(http://cur.cursors-4u.net/nature/nat-10/nat996.cur), auto !important;
 }
 
 select::-ms-expand {
