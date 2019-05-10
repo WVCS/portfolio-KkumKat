@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<?=$thankYou ?>
   <!---Portfolio #1827 Color Palette--->
   <link rel="stylesheet" type="text/css" href="style.css">
   <html>
@@ -26,7 +27,7 @@
   <h1 class="Contact">&bull; Contact Me &bull;</h1>
   <div class="underline">
   </div>
-  <form action="email.php" method="post" id="contact_form" enctype="text/plain">
+  <form action="Contact.php" method="post" id="contact_form" enctype="text/plain">
     <div class="name">
       <label for="name"></label>
       <input type="text" placeholder="Your name*" name="name" id="name_input" required>
@@ -36,7 +37,7 @@
       <input type="email" placeholder="Your email*" name="email" id="email_input" required>
     </div>
     <div class="telephone">
-      <label for="name"></label>
+      <label for="telephone"></label>
       <input type="text" placeholder="Your phone number" name="telephone" id="telephone_input">
     </div>
     <div class="subject">
@@ -55,9 +56,6 @@
     <div class="submit">
       <input type="submit" value="Send Message" id="form_button" />
     </div>
-    <?php
-    mail('kassidypeep@gmail.com', $_POST['name'], $_POST['email'], $_POST['telephone'], $_POST['subject'], $_POST['message']);
-?>
     <!---https://stackoverflow.com/questions/7449767/how-do-i-send-an-html-form-in-an-email-not-just-mailto-->
   </form><!-- // End form -->
 </div><!-- // End #container -->
