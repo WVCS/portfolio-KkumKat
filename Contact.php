@@ -1,25 +1,13 @@
 <?php
-if($_POST["message"]) {
-    mail("kassidypeep@gmail.com", "Form to email message", $_POST["name"], $_POST["email"], $_POST["telephone"], $_POST["subject"], $_POST["message"], "From: an@email.address");
-}
-?>
-
-<?php
-
-if($_POST["submit"]) {
-    $recipient="kassidypeep@gmail.com";
-    $subject="Form to email message";
-    $name=$_POST["name"];
-    $senderEmail=$_POST["email"];
-    $senderTelephone=$_POST["telephone"];
-    $subject=$_POST["subject"];
-    $message=$_POST["message"];
-
-    $mailBody="Name: $name\nEmail: $senderEmail\n\n$message";
-
-    mail($recipient, $subject, $senderTelephone, $subject, $message, "From: $name <$senderEmail>");
-
-    $thankYou="<p>Your message has been sent. I'll get back to you as soon as I can. Thank you!</p>";
-}
-
+$name = $_POST['name'];
+$email = $_POST['email'];
+$phone = $_POST['telephone'];
+$subject = $_POST['subject'];
+$message = $_POST['message'];
+$formcontent="From: $name $email $phone \n Message: $message";
+$recipient = "kassidypeep@gmail.com";
+$emailSubject = "$subject";
+$mailheader = "From: $email \r\n";
+mail($recipient, $subject, $formcontent, $mailheader) or die("Error!");
+echo "Your email has been sent. I'll try to get back to you as soon as possible. Thank You!" . " -" . "<a href='index.html' style='text-decoration:none;color:#ff0099;'> Return to the home page</a>";
 ?>
