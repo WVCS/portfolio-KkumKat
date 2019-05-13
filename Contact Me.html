@@ -1,5 +1,22 @@
 <!DOCTYPE html>
-<?=$thankYou ?>
+<!---JSON for Form--->
+<script>
+  var $form = $('form#contact_form'),
+    url = 'https://script.google.com/macros/s/AKfycbzAFW8OpqzlxC-AXuRVA6l7BkgUI-1zIWXNDHgGqRd7YscdkVw5/exec'
+
+$('#form_button').on('click', function(e) {
+  e.preventDefault();
+  var jqxhr = $.ajax({
+    url: url,
+    method: "GET",
+    dataType: "json",
+    data: $form.serializeObject()
+  }).success(
+    // do something
+  );
+})
+</script>
+<!---End JSON for Form--->
   <!---Portfolio #1827 Color Palette--->
   <link rel="stylesheet" type="text/css" href="style.css">
   <html>
