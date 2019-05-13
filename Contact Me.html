@@ -1,22 +1,4 @@
 <!DOCTYPE html>
-<!---JSON for Form--->
-<script>
-  var $form = $('form#contact_form'),
-    url = 'https://script.google.com/macros/s/AKfycbzAFW8OpqzlxC-AXuRVA6l7BkgUI-1zIWXNDHgGqRd7YscdkVw5/exec'
-
-$('#form_button').on('click', function(e) {
-  e.preventDefault();
-  var jqxhr = $.ajax({
-    url: url,
-    method: "GET",
-    dataType: "json",
-    data: $form.serializeObject()
-  }).success(
-    // do something
-  );
-})
-</script>
-<!---End JSON for Form--->
   <!---Portfolio #1827 Color Palette--->
   <link rel="stylesheet" type="text/css" href="style.css">
   <html>
@@ -75,6 +57,22 @@ $('#form_button').on('click', function(e) {
     </div>
     <!---https://medium.com/@dmccoy/how-to-submit-an-html-form-to-google-sheets-without-google-forms-b833952cc175-->
     <!---https://www.google.com/search?rlz=1C1GCEV_enUS833US833&q=how+to+connect+json+file+with+html+file&spell=1&sa=X&ved=0ahUKEwjQwdfMsZHiAhWGu54KHSGjDXoQBQgoKAA&biw=1224&bih=920&safe=active&ssui=on--->
+<!---JSON for Form--->
+<script src="https://wzrd.in/standalone/formdata-polyfill"></script>
+<script src="https://wzrd.in/standalone/promise-polyfill@latest"></script>
+<script src="https://wzrd.in/standalone/whatwg-fetch@latest"></script>
+<script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbxuRBNU4E6MS6WWMmUDKaqv-zY0Yi2wBS_peYNKCIFDdP-4E0uw/exec'
+  const form = document.forms['submit-to-google-sheet']
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => console.log('Success!', response))
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
+<!---End JSON for Form---> 
   </form><!-- // End form -->
 </div><!-- // End #container -->
   </body></html>
