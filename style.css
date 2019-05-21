@@ -5,6 +5,30 @@ body {
 }
 
 body, a:hover {cursor: url(http://cur.cursors-4u.net/nature/nat-10/nat996.cur), auto !important;}
+
+/*Fade in for everyting*/
+.animated {
+  -webkit-animation-duration: 3s;
+  animation-duration: 3s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+         
+@-webkit-keyframes fadeIn {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+         
+@keyframes fadeIn {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+         
+  .fadeIn {
+ -webkit-animation-name: fadeIn;
+ animation-name: fadeIn;
+}
+/*End Fade in for everything*/
 /*End important CSS*/
 
 /*Nav Bar CSS*/
