@@ -154,6 +154,11 @@ h1.Contact {
 	width: 45%;
 }
 
+.gender {
+  float: left;
+  width: 45%;
+}
+
 input[type='text'], [type='email'], select, textarea {
 	background: none;
   border: none;
@@ -210,7 +215,8 @@ select::-ms-expand {
 }
 
 .telephone {
-  width: 100%;
+  float: right;
+  width: 45%;
 }
 
 textarea {
