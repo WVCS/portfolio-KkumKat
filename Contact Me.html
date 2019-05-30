@@ -4,6 +4,14 @@
   <html>
     <head>
   <title>Kassidy Baier - Contact Me</title>
+      	<script src="contactformvalidation.js"></script>
+	<script>
+	required.add('name','NOT_EMPTY','Your Name');
+	required.add('email','EMAIL','Your Email');
+	required.add('message','NOT_EMPTY',"I'd like to chat about");
+	required.add('AntiSpam','NOT_EMPTY','Anti-Spam Question');
+    required.add('gender', 'NOT-EMPTY', 'Gender')
+	</script>
 </head>
     <!---Header Picture--->
   <header id="header-background">
@@ -26,14 +34,14 @@
   <h1 class="Contact">&bull; Contact Me &bull;</h1>
   <div class="underline">
   </div>
-  <form method="post" id="contact_form" enctype="text/plain" action='<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>'>
+  <form method="post" id="contact_form" enctype="text/plain" action="contactformprocess.php" onsubmit="return validate.check(this)">
     <div class="name">
       <label for="name"></label>
-      <input type="text" placeholder="Your name*" name="name" id="name_input" required><?php echo $nameErr;?>
+      <input type="text" placeholder="Your name*" name="name" id="name_input" required>
     </div>
     <div class="email">
       <label for="email"></label>
-      <input type="email" placeholder="Your email*" name="email" id="email_input" required><?php echo $emailErr;?>
+      <input type="email" placeholder="Your email*" name="email" id="email_input" required>
     </div>
 <div class="gender">
       <label for="gender"></label>
@@ -61,53 +69,29 @@
       <label for="message"></label>
       <textarea name="message" placeholder="I'd like to chat about*" id="message_input" cols="30" rows="5" required></textarea>
     </div>
+    <h1 class="Contact">&bull; To help prevent automated spam, please answer this question &bull;</h1>
+  <div class="underline">
+  </div>
+    <div class="antispammessage">
+      <label for="antispammessage"></label>
+      <input type="text" placeholder="Using only numbers, what is 10 plus 15?*" name="AntiSpam" id="AntiSpam" required> &nbsp;
+	  </div>
     <div class="submit">
       <input type="submit" value="Send Message" id="form_button" />
     </div>
-    <!---https://medium.com/@dmccoy/how-to-submit-an-html-form-to-google-sheets-without-google-forms-b833952cc175-->
-  </form>
-  <script><?php
-// define variables and set to empty values
-    $nameErr = $emailErr = "";
-$name = $email = $gender = $telephone = $subject = $message = "";
-
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
-  $name = test_input($_POST["name"]);
-  if (!preg_match("/^[a-zA-Z ]*$/",$name)) {
-  $nameErr = "Only letters and white space allowed"; 
-}
-  $email = test_input($_POST["email"]);
-  if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
-  $emailErr = "Invalid email format"; 
-}
-  $gender = test_input($_POST["gender"]);
-  $telephone = test_input($_POST["telephone"]);
-  $subject = test_input($_POST["subject"]);
-  $message = test_input($_POST["message"]);
-}
-
-function test_input($data) {
-  $data = trim($data);
-  $data = stripslashes($data);
-  $data = htmlspecialchars($data);
-  return $data;
-}
-?></script><!-- // End form -->
+  </form><!-- // End form -->
 </div><!-- // End #container -->
-      <p>Special thanks to Geoff Graham (Home page typewriter effect), tutorialspoint.com (fade in effects for whole website), kpendic on codepen.io (Wolf lineart), </p>
-      <!---https://mobirise.com/bootstrap-template/footer-template.html--->
+      <p>Special thanks to Geoff Graham (Home page typewriter effect), tutorialspoint.com (fade in effects for whole website), kpendic on codepen.io (Wolf lineart), FreeContactForm.com for help on form</p>
+      <!---https://mobirise.com/bootstrap-template/footer-template.html
+      
+      
+      
+      https://codepen.io/joshatoutthink/pen/eadVNd--->
       
       
       
       
-      https://docs.google.com/forms/d/e/1FAIpQLSeyID8JD78-2KewG-2hNdQ-X5zPNe_oHc7sEQ4WeTL8my8sdg/viewform?usp=sf_link
-      https://www.developerdrive.com/2019/01/add-google-forms-static-site/
-      https://codepen.io/joshatoutthink/pen/eadVNd
-      
-      
-      
-      
-      https://www.w3schools.com/php/php_form_complete.asp
+     
       
       
   </body></html>
