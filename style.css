@@ -4,6 +4,10 @@ body {
     font-family: Georgia;
 }
 
+h3.nav {
+  
+}
+
 body, a:hover {cursor: url(http://cur.cursors-4u.net/nature/nat-10/nat996.cur), auto !important;}
 
 /*Fade in for everyting*/
@@ -219,6 +223,10 @@ select::-ms-expand {
   width: 45%;
 }
 
+.antispammessage {
+  padding: 80px 0px;
+}
+
 textarea {
 	line-height: 150%;
 	height: 150px;
@@ -308,4 +316,3 @@ textarea {
   }
 }
 /*End form CSS*/
-
