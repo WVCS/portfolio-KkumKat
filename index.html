@@ -21,55 +21,65 @@
 <link href="https://fonts.googleapis.com/css?family=Waiting+for+the+Sunrise" rel="stylesheet" type="text/css"/>
 <div id="typedtext" style="font-family: 'Waiting for the Sunrise', cursive; font-size:30px; margin: 10px 50px; letter-spacing: 6px; font-weight: bold; text-align: center"></div>
       
+<meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="keywords" content="footer, address, phone, icons" />
+
+  <link rel="stylesheet" href="css/footer-distributed-with-address-and-phones.css">
+
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+
+  <link href="http://fonts.googleapis.com/css?family=Cookie" rel="stylesheet" type="text/css">
       
-    
-    
-    
-    
-    
-    
-    
+      <footer class="footer-distributed">
+
+      <div class="footer-left">
+
+        <IMG SRC="" ALT="" WIDTH=150 HEIGHT=100>
+        <p class="footer-links">
+          <a href="#" class="active">Home</a> ·
+          <a href="#">Projects/Examples</a> ·
+          <a href="#">About Me</a> ·
+          <a href="#">Contact Me</a>
+        </p>
+
+        <p class="footer-company-name">Kassidy Baier &copy; 2019</p>
+      </div>
+
+      <div class="footer-center">
+
+        <div>
+          <p>About the Website</p>
+        </div>
+<p class="footer-company-about">Special thanks to Geoff Graham (Home page typewriter effect), tutorialspoint.com (fade in effects for whole website), Cody Barron on codepen.io (Footer help) FreeContactForm.com for help on form</p>
+        </div>
+
+      </div>
+
+      <div class="footer-right">
+
+        <p class="footer-company-about">
+          <span>Follow me here:</span></p>
+
+        <div class="footer-icons">
+
+          <a href="#"><i class="fa fa-instagram"></i></a>
+          <a href="#"><i class="fa fa-github"></i></a>
+
+        </div>
+
+      </div>
+
+    </footer>
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
     </body></html>
-
-
-
-
-<script>
-// set up text to print, each item in array is new line
-var aText = new Array(
-"The Artist's Digital Spot"
-);
-var iSpeed = 85; // time delay of print out
-var iIndex = 0; // start printing array at this posision
-var iArrLength = aText[0].length; // the length of the text array
-var iScrollAt = 20; // start scrolling up at this many lines
- 
-var iTextPos = 0; // initialise text position
-var sContents = ''; // initialise contents variable
-var iRow; // initialise current row
- 
-function typewriter()
-{
- sContents =  ' ';
- iRow = Math.max(0, iIndex-iScrollAt);
- var destination = document.getElementById("typedtext");
- 
- while ( iRow < iIndex ) {
-  sContents += aText[iRow++] + '<br />';
- }
- destination.innerHTML = sContents + aText[iIndex].substring(0, iTextPos) + "_";
- if ( iTextPos++ == iArrLength ) {
-  iTextPos = 0;
-  iIndex++;
-  if ( iIndex != aText.length ) {
-   iArrLength = aText[iIndex].length;
-   setTimeout("typewriter()", 500);
-  }
- } else {
-  setTimeout("typewriter()", iSpeed);
- }
-}
-
-
-typewriter();
-</script>
