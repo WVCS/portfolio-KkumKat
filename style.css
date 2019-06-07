@@ -324,7 +324,7 @@ textarea {
   font: bold 16px sans-serif;
 
   padding: 55px 50px;
-  margin-top: 80px;
+  margin-top: 800px;
 }
 
 .footer-distributed .footer-left,
@@ -493,3 +493,223 @@ textarea {
   }
 }
 /*End Footer CSS*/
+
+/*About CSS*/
+p.about-title {
+  float: right;
+  font-size: 30px;
+  padding: 0px 180px;
+  font-family: Impact, Charcoal, sans-serif;
+}
+
+img.prof-image {
+  width: 50%;
+  height: 50%;
+  padding: 80px 40px;
+  
+}
+.about .desc h1 {
+  font-family:'Trebuchet MS', sans-serif;
+  font-weight: bold;
+  font-size: 18px;
+}
+.desc{
+  width: 50%;
+  margin-left: 400px;
+  padding: 80px 0px;
+}
+.about .desc ul {
+  font-family: Optima;
+  font-size: 16px;
+}
+
+.about .desc p {
+  font-family: Optima;
+  font-size: 16px;
+}
+
+.mainCont{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+/*End About CSS*/
+
+/*Skills CSS*/
+.container-skill{
+  float: right;
+  max-width: 600px;
+  margin: 40px auto;
+  background-color: #f7f0f0;
+  padding: 10px 40px 40px;
+   border-radius: 30px 5px 15px 50px;
+}
+.title{
+  font-size: 2em;
+  font-weight: bold;
+  text-align: center;
+  animation: translate 2s ease;
+  font-family: Impact;
+  color: #464545;
+}
+.text-skill{
+  font-size: 1.2em;
+  margin: 1em 0;
+  animation: text 2s ease;
+  font-family: Impact;
+  color: #464545;
+}
+/* Processbar-Illustrator */
+.process-bar-illustrator{
+  width: 100%;
+  height: 20px;
+  background-color: #fefcf9;
+  position: relative;
+  border-radius: 10px;
+}
+.process-bar-illustrator:before{
+  content: '';
+  position: absolute;
+  width: 70%;
+  height: 20px;
+  border-radius: 10px;
+  background-color: #8caba8;
+  animation: processbar-illustrator 2s ease-in;
+}
+/* End Processbar Illustrator */
+
+/* Processbar Photoshop */
+.process-bar-photoshop{
+  width: 100%;
+  height: 20px;
+  background-color: #fefcf9;
+  position: relative;
+  border-radius: 10px;
+}
+.process-bar-photoshop:after{
+  content: '';
+  position: absolute;
+  width: 80%;
+  height: 20px;
+  border-radius: 10px;
+  background-color: #a2798f;
+  animation: processbar-photoshop 2s ease-out;
+}
+/* End Processbar Photoshop */
+
+
+/* Processbar Css */
+.process-bar-css{
+  width: 100%;
+  height: 20px;
+  background-color: #fefcf9;
+  position: relative;
+  border-radius: 10px;
+}
+.process-bar-css:before{
+  content: '';
+  position: absolute;
+  width: 40%;
+  height: 20px;
+  border-radius: 10px;
+  background-color: #8caba8;
+  animation: processbar-css 2s ease-in-out;
+}
+
+/* End Processbar Css */
+
+/* Processbar Html */
+.process-bar-html{
+  width: 100%;
+  height: 20px;
+  background-color: #fefcf9;
+  position: relative;
+  border-radius: 10px;
+}
+
+.process-bar-html:after{
+  content: '';
+  position: absolute;
+  width: 80%;
+  height: 20px;
+  border-radius: 10px;
+  background-color: #a2798f;
+  animation: processbar-html 2s linear;
+}
+/* End Processbar Html */
+
+/* Processbar Lab */
+.process-bar-lab{
+  width: 100%;
+  height: 20px;
+  background-color: #fefcf9;
+  position: relative;
+  border-radius: 10px;
+}
+
+.process-bar-lab:after{
+  content: '';
+  position: absolute;
+  width: 70%;
+  height: 20px;
+  border-radius: 10px;
+  background-color: #8caba8;
+  animation: processbar-lab 2s linear;
+}
+/* End Processbar Lab */
+
+/* Animation illustrator */
+@keyframes processbar-illustrator{
+  from{
+    width: 0;
+  }
+  to{
+    width: 70%;
+  }
+}
+/* End Animation Illustrator*/
+
+/* Animation Photoshop */
+@keyframes processbar-photoshop{
+  from{
+    width: 0;
+  }
+  to{
+    width: 80%;
+  }
+}
+/* End Animation Photoshop */
+
+/* Animation Css */
+@keyframes processbar-css{
+  from{
+    width: 0;
+  }
+  to{
+    width: 40%;
+  }
+}
+/* End Animation Css*/
+
+/* Animation Html */
+@keyframes processbar-html{
+  from{
+    width: 0;
+  }
+  to{
+    width: 80%;
+  }
+}
+/* End Animation Html*/
+
+/* Animation Lab */
+@keyframes processbar-lab{
+  from{
+    width: 0;
+  }
+  to{
+    width: 70%;
+  }
+}
+/* End Animation Lab */
+/*End Skills CSS*/
