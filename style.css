@@ -729,8 +729,8 @@ div.gallery a:hover {
 }
 
 div.gallery img {
-  width: 100%;
-  height: auto;
+  width: 10%;
+  height: 10%;
 }
 
 div.desc {
