@@ -20,7 +20,40 @@
 <p></p>
 <link href="https://fonts.googleapis.com/css?family=Waiting+for+the+Sunrise" rel="stylesheet" type="text/css"/>
 <div id="typedtext" style="font-family: 'Waiting for the Sunrise', cursive; font-size:30px; margin: 10px 50px; letter-spacing: 6px; font-weight: bold; text-align: center"></div>
+
       
+      <div class="container-skill container animated fadeIn">
+  <p class="title">Skills</p>
+  
+<!--   Illustrator -->
+  <div class="text-skill">ADOBE ILLUSTRATOR - 70%</div>
+  <div class="process-bar-illustrator"></div>
+<!--   End Illustrator -->
+  
+<!--   Adobe Photoshop -->
+  <div class="text-skill">ADOBE PHOTOSHOP (REG & CC) - 80%</div>
+  <div class="process-bar-photoshop"></div>
+<!--   End Photoshop -->
+  
+<!--   Css -->
+  <div class="text-skill">CSS - 40%</div>
+  <div class="process-bar-css"></div>
+<!--   End Css -->
+  
+<!--   Html -->
+  <div class="text-skill">HTML - 80%</div>
+  <div class="process-bar-html"></div>
+<!--   End Html -->
+        
+        <!--   Html -->
+  <div class="text-skill">LAB WORK - 70%</div>
+  <div class="process-bar-lab"></div>
+<!--   End Html -->
+</div>
+      
+      
+      
+      <!---footer--->
 <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -52,7 +85,7 @@
         <div>
           <p>About the Website</p>
         </div>
-<p class="footer-company-about">Special thanks to Geoff Graham (Home page typewriter effect), tutorialspoint.com (fade in effects for whole website), Cody Barron on codepen.io (Footer help) FreeContactForm.com for help on form</p>
+<p class="footer-company-about">Special thanks to Geoff Graham (Home page typewriter effect), tutorialspoint.com (fade in effects for whole website), Cody Barron on codepen.io (Footer help)</p>
         </div>
 
       </div>
@@ -64,7 +97,7 @@
 
         <div class="footer-icons">
 
-          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fa fa-instagram"></i></a>
           <a href="#"><i class="fa fa-github"></i></a>
 
         </div>
@@ -74,47 +107,7 @@
     </footer>
       
       
-      <script>
-        // set up text to print, each item in array is new line
-var aText = new Array(
-"The Artist's Digital Spot"
-);
-var iSpeed = 85; // time delay of print out
-var iIndex = 0; // start printing array at this posision
-var iArrLength = aText[0].length; // the length of the text array
-var iScrollAt = 20; // start scrolling up at this many lines
- 
-var iTextPos = 0; // initialise text position
-var sContents = ''; // initialise contents variable
-var iRow; // initialise current row
- 
-function typewriter()
-{
- sContents =  ' ';
- iRow = Math.max(0, iIndex-iScrollAt);
- var destination = document.getElementById("typedtext");
- 
- while ( iRow < iIndex ) {
-  sContents += aText[iRow++] + '<br />';
- }
- destination.innerHTML = sContents + aText[iIndex].substring(0, iTextPos) + "_";
- if ( iTextPos++ == iArrLength ) {
-  iTextPos = 0;
-  iIndex++;
-  if ( iIndex != aText.length ) {
-   iArrLength = aText[iIndex].length;
-   setTimeout("typewriter()", 500);
-  }
- } else {
-  setTimeout("typewriter()", iSpeed);
- }
-}
-
-
-typewriter();
-
-
-      </script>
+      
       
       
       
