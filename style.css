@@ -329,7 +329,7 @@ textarea {
   font: bold 16px sans-serif;
 
   padding: 55px 50px;
-  margin-top: 100px;
+  margin-top: 500px;
 }
 
 .footer-distributed .footer-left,
@@ -729,8 +729,8 @@ div.gallery a:hover {
 }
 
 div.gallery img {
-  width: 10%;
-  height: 10%;
+  width: 50%;
+  height: 50%;
 }
 
 div.desc {
