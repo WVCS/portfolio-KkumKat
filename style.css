@@ -136,7 +136,7 @@ textarea {
 
 form {
   padding: 37.5px;
-  margin: 50px 0;
+  margin: 50px;
 }
 
 h1.Contact {
@@ -329,7 +329,7 @@ textarea {
   font: bold 16px sans-serif;
 
   padding: 55px 50px;
-  margin-top: 700px;
+  margin-top: 500px;
 }
 
 .footer-distributed .footer-left,
@@ -350,7 +350,7 @@ textarea {
 .footer-distributed h3 {
   color: #a2798f;
   font: normal 36px "Cookie", cursive;
-  margin: 0;
+  margin: 0px;
 }
 
 .footer-distributed h3 span {
@@ -501,16 +501,18 @@ textarea {
 
 /*About CSS*/
 p.about-title {
-  float: right;
+  margin-top: 20px;
+  margin-left: 80%;
   font-size: 30px;
-  padding: 0px 180px;
+  padding: 0px;
   font-family: Impact, Charcoal, sans-serif;
 }
 
 img.prof-image {
   width: 50%;
+  margin-top: 0px;
   height: 50%;
-  padding: 80px 40px;
+  padding: 10px 40px;
   
 }
 .about .desc h1 {
@@ -520,12 +522,14 @@ img.prof-image {
 }
 .desc{
   width: 50%;
-  margin-left: 400px;
-  padding: 80px 0px;
+  margin-left: 50px;
+  margin-top: 5px;
+  padding: 0px;
 }
 .about .desc ul {
   font-family: Optima;
   font-size: 16px;
+  text-align: left;
 }
 
 .about .desc p {
@@ -767,4 +771,3 @@ div.desc {
   clear: both;
 }
 /*End Gallery CSS*/
-
