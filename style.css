@@ -477,6 +477,15 @@ textarea {
   background-color: #a2798f;
 }
 
+.fa {
+  border-radius: 50%;
+}
+
+.fa-instagram .fa-github {
+  background: #8caba8;
+  color: #fefcf9;
+}
+
 /* If you don't want the footer to be responsive, remove these media queries */
 
 @media (max-width: 880px) {
