@@ -26,7 +26,7 @@
   <h1 class="Contact">&bull; Contact Me &bull;</h1>
   <div class="underline">
   </div>
-  <form method="post" action="contactengine.php" id="contact_form" enctype="text/plain">
+  <form method="post" action="contact-form-handler.php" id="contact_form" enctype="text/plain">
     <div class="name">
       <label for="name"></label>
       <input type="text" placeholder="Your name*" name="name" id="name_input" required>
@@ -61,51 +61,6 @@
       <label for="message"></label>
       <textarea name="message" placeholder="I'd like to chat about*" id="message_input" cols="30" rows="5" required></textarea>
     </div>
-    <h1 class="Contact">&bull; To help prevent automated spam, please answer this question &bull;</h1>
-  <div class="underline">
-  </div>
-    <div class="antispammessage">
-      <label for="antispammessage"></label>
-      <input type="text" placeholder="Using only numbers, what is 10 plus 15?*" name="AntiSpam" id="AntiSpam" required> &nbsp;
-	  </div>
-    
-    
-    <div id="captcha-area">
-<?php
-				
-				require_once('recaptchalib.php');
-				$publickey = "6LdmigAAAAAAAHJEZiIdo6bYZtwReBZavbXxGacx";
-				$privatekey = "6LdmigAAAAAAAPTBvc0XBOdlKn5dPyTgazNvmHBx";
-				
-				# the response from reCAPTCHA
-				$resp = null;
-				# the error code from reCAPTCHA, if any
-				$error = null;
-				
-				# are we submitting the page?
-				if ($_POST["submit"]) {
-				  $resp = recaptcha_check_answer ($privatekey,
-												  $_SERVER["REMOTE_ADDR"],
-												  $_POST["recaptcha_challenge_field"],
-												  $_POST["recaptcha_response_field"]);
-				
-				  if ($resp->is_valid) {
-					echo "You got it!";
-					# in a real application, you should send an email, create an account, etc
-				  } else {
-					# set the error code so that we can display it. You could also use
-					# die ("reCAPTCHA failed"), but using the error message is
-					# more user friendly
-					$error = $resp->error;
-				  }
-				}
-				echo recaptcha_get_html($publickey, $error);
-				?>
-				</div>
-    
-    
-    
-    
     
     <div class="submit">
       <input type="submit" value="Send Message" id="form_button" />
